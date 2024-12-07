@@ -2,8 +2,8 @@
 	"information_for_contributors": [
 		"This file is modified based on https://github.com/microsoft/vscode/blob/bfa5930c7c0af0759d29e1a89a8f942e303fb870/extensions/go/syntaxes/go.tmLanguage.json"
 	],
-	"name": "Go",
-	"scopeName": "source.go",
+	"name": "GoPlus",
+	"scopeName": "source.gop",
 	"patterns": [
 		{
 			"include": "#statements"
@@ -209,11 +209,11 @@
 			"patterns": [
 				{
 					"match": "\\{",
-					"name": "punctuation.definition.begin.bracket.curly.go"
+					"name": "punctuation.definition.begin.bracket.curly.gop"
 				},
 				{
 					"match": "\\}",
-					"name": "punctuation.definition.end.bracket.curly.go"
+					"name": "punctuation.definition.end.bracket.curly.gop"
 				},
 				{
 					"begin": "(?:([\\w\\.\\*]+)?(\\[))",
@@ -225,18 +225,18 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						}
 					},
 					"end": "\\]",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						}
 					},
 					"patterns": [
@@ -249,13 +249,13 @@
 					"begin": "\\(",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -271,39 +271,39 @@
 			"match": "\\b(?:(true|false)|(nil)|(iota))\\b",
 			"captures": {
 				"1": {
-					"name": "constant.language.boolean.go"
+					"name": "constant.language.boolean.gop"
 				},
 				"2": {
-					"name": "constant.language.null.go"
+					"name": "constant.language.null.gop"
 				},
 				"3": {
-					"name": "constant.language.iota.go"
+					"name": "constant.language.iota.gop"
 				}
 			}
 		},
 		"comments": {
 			"patterns": [
 				{
-					"name": "comment.block.go",
+					"name": "comment.block.gop",
 					"begin": "(\\/\\*)",
 					"beginCaptures": {
 						"1": {
-							"name": "punctuation.definition.comment.go"
+							"name": "punctuation.definition.comment.gop"
 						}
 					},
 					"end": "(\\*\\/)",
 					"endCaptures": {
 						"1": {
-							"name": "punctuation.definition.comment.go"
+							"name": "punctuation.definition.comment.gop"
 						}
 					}
 				},
 				{
-					"name": "comment.line.double-slash.go",
+					"name": "comment.line.double-slash.gop",
 					"begin": "(\\/\\/)",
 					"beginCaptures": {
 						"1": {
-							"name": "punctuation.definition.comment.go"
+							"name": "punctuation.definition.comment.gop"
 						}
 					},
 					"end": "(?:\\n|$)"
@@ -315,16 +315,16 @@
 			"begin": "(?:(\\bmap\\b)(\\[))",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.map.go"
+					"name": "keyword.map.gop"
 				},
 				"2": {
-					"name": "punctuation.definition.begin.bracket.square.go"
+					"name": "punctuation.definition.begin.bracket.square.gop"
 				}
 			},
 			"end": "(?:(\\])((?:(?:(?:[\\*\\[\\]]+)?(?:\\<\\-\\s*)?\\bchan\\b(?:\\s*\\<\\-)?\\s*)+)?(?!(?:[\\[\\]\\*]+)?\\b(?:func|struct|map)\\b)(?:[\\*\\[\\]]+)?(?:[\\w\\.]+)(?:\\[(?:(?:[\\w\\.\\*\\[\\]\\{\\}]+)(?:(?:\\,\\s*(?:[\\w\\.\\*\\[\\]\\{\\}]+))*))?\\])?)?)",
 			"endCaptures": {
 				"1": {
-					"name": "punctuation.definition.end.bracket.square.go"
+					"name": "punctuation.definition.end.bracket.square.gop"
 				},
 				"2": {
 					"patterns": [
@@ -333,15 +333,15 @@
 						},
 						{
 							"match": "\\[",
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						},
 						{
 							"match": "\\]",
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -358,31 +358,31 @@
 				},
 				{
 					"match": "\\[",
-					"name": "punctuation.definition.begin.bracket.square.go"
+					"name": "punctuation.definition.begin.bracket.square.gop"
 				},
 				{
 					"match": "\\]",
-					"name": "punctuation.definition.end.bracket.square.go"
+					"name": "punctuation.definition.end.bracket.square.gop"
 				},
 				{
 					"match": "\\{",
-					"name": "punctuation.definition.begin.bracket.curly.go"
+					"name": "punctuation.definition.begin.bracket.curly.gop"
 				},
 				{
 					"match": "\\}",
-					"name": "punctuation.definition.end.bracket.curly.go"
+					"name": "punctuation.definition.end.bracket.curly.gop"
 				},
 				{
 					"match": "\\(",
-					"name": "punctuation.definition.begin.bracket.round.go"
+					"name": "punctuation.definition.begin.bracket.round.gop"
 				},
 				{
 					"match": "\\)",
-					"name": "punctuation.definition.end.bracket.round.go"
+					"name": "punctuation.definition.end.bracket.round.gop"
 				},
 				{
 					"match": "\\w+",
-					"name": "entity.name.type.go"
+					"name": "entity.name.type.gop"
 				}
 			]
 		},
@@ -392,13 +392,13 @@
 					"begin": "\\{",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.begin.bracket.curly.go"
+							"name": "punctuation.definition.begin.bracket.curly.gop"
 						}
 					},
 					"end": "\\}",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.curly.go"
+							"name": "punctuation.definition.end.bracket.curly.gop"
 						}
 					},
 					"patterns": [
@@ -411,13 +411,13 @@
 					"begin": "\\(",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -430,13 +430,13 @@
 					"begin": "\\[",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						}
 					},
 					"end": "\\]",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						}
 					},
 					"patterns": [
@@ -451,15 +451,15 @@
 			"patterns": [
 				{
 					"match": "\\,",
-					"name": "punctuation.other.comma.go"
+					"name": "punctuation.other.comma.gop"
 				},
 				{
 					"match": "\\.(?!\\.\\.)",
-					"name": "punctuation.other.period.go"
+					"name": "punctuation.other.period.gop"
 				},
 				{
 					"match": ":(?!=)",
-					"name": "punctuation.other.colon.go"
+					"name": "punctuation.other.colon.gop"
 				}
 			]
 		},
@@ -468,43 +468,43 @@
 				{
 					"comment": "Flow control keywords",
 					"match": "\\b(break|case|continue|default|defer|else|fallthrough|for|go|goto|if|range|return|select|switch)\\b",
-					"name": "keyword.control.go"
+					"name": "keyword.control.gop"
 				},
 				{
 					"match": "\\bchan\\b",
-					"name": "keyword.channel.go"
+					"name": "keyword.channel.gop"
 				},
 				{
 					"match": "\\bconst\\b",
-					"name": "keyword.const.go"
+					"name": "keyword.const.gop"
 				},
 				{
 					"match": "\\bvar\\b",
-					"name": "keyword.var.go"
+					"name": "keyword.var.gop"
 				},
 				{
 					"match": "\\bfunc\\b",
-					"name": "keyword.function.go"
+					"name": "keyword.function.gop"
 				},
 				{
 					"match": "\\binterface\\b",
-					"name": "keyword.interface.go"
+					"name": "keyword.interface.gop"
 				},
 				{
 					"match": "\\bmap\\b",
-					"name": "keyword.map.go"
+					"name": "keyword.map.gop"
 				},
 				{
 					"match": "\\bstruct\\b",
-					"name": "keyword.struct.go"
+					"name": "keyword.struct.gop"
 				},
 				{
 					"match": "\\bimport\\b",
-					"name": "keyword.control.import.go"
+					"name": "keyword.control.import.gop"
 				},
 				{
 					"match": "\\btype\\b",
-					"name": "keyword.type.go"
+					"name": "keyword.type.gop"
 				}
 			]
 		},
@@ -513,43 +513,43 @@
 			"patterns": [
 				{
 					"match": "((?:\\*|\\&)+)(?:(?!\\d)(?=(?:[\\w\\[\\]])|(?:\\<\\-)))",
-					"name": "keyword.operator.address.go"
+					"name": "keyword.operator.address.gop"
 				},
 				{
 					"match": "<\\-",
-					"name": "keyword.operator.channel.go"
+					"name": "keyword.operator.channel.gop"
 				},
 				{
 					"match": "\\-\\-",
-					"name": "keyword.operator.decrement.go"
+					"name": "keyword.operator.decrement.gop"
 				},
 				{
 					"match": "\\+\\+",
-					"name": "keyword.operator.increment.go"
+					"name": "keyword.operator.increment.gop"
 				},
 				{
 					"match": "(==|!=|<=|>=|<(?!<)|>(?!>))",
-					"name": "keyword.operator.comparison.go"
+					"name": "keyword.operator.comparison.gop"
 				},
 				{
 					"match": "(&&|\\|\\||!)",
-					"name": "keyword.operator.logical.go"
+					"name": "keyword.operator.logical.gop"
 				},
 				{
 					"match": "(=|\\+=|\\-=|\\|=|\\^=|\\*=|/=|:=|%=|<<=|>>=|&\\^=|&=)",
-					"name": "keyword.operator.assignment.go"
+					"name": "keyword.operator.assignment.gop"
 				},
 				{
 					"match": "(\\+|\\-|\\*|/|%)",
-					"name": "keyword.operator.arithmetic.go"
+					"name": "keyword.operator.arithmetic.gop"
 				},
 				{
 					"match": "(&(?!\\^)|\\||\\^|&\\^|<<|>>|\\~)",
-					"name": "keyword.operator.arithmetic.bitwise.go"
+					"name": "keyword.operator.arithmetic.bitwise.gop"
 				},
 				{
 					"match": "\\.\\.\\.",
-					"name": "keyword.operator.ellipsis.go"
+					"name": "keyword.operator.ellipsis.gop"
 				}
 			]
 		},
@@ -559,24 +559,24 @@
 					"begin": "'",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.begin.go"
+							"name": "punctuation.definition.string.begin.gop"
 						}
 					},
 					"end": "'",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.end.go"
+							"name": "punctuation.definition.string.end.gop"
 						}
 					},
-					"name": "string.quoted.rune.go",
+					"name": "string.quoted.rune.gop",
 					"patterns": [
 						{
 							"match": "\\G(\\\\([0-7]{3}|[abfnrtv\\\\'\"]|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})|.)(?=')",
-							"name": "constant.other.rune.go"
+							"name": "constant.other.rune.gop"
 						},
 						{
 							"match": "[^']+",
-							"name": "invalid.illegal.unknown-rune.go"
+							"name": "invalid.illegal.unknown-rune.gop"
 						}
 					]
 				}
@@ -586,35 +586,35 @@
 			"patterns": [
 				{
 					"match": "\\bbool\\b",
-					"name": "storage.type.boolean.go"
+					"name": "storage.type.boolean.gop"
 				},
 				{
 					"match": "\\bbyte\\b",
-					"name": "storage.type.byte.go"
+					"name": "storage.type.byte.gop"
 				},
 				{
 					"match": "\\berror\\b",
-					"name": "storage.type.error.go"
+					"name": "storage.type.error.gop"
 				},
 				{
 					"match": "\\b(complex(64|128)|float(32|64)|u?int(8|16|32|64)?)\\b",
-					"name": "storage.type.numeric.go"
+					"name": "storage.type.numeric.gop"
 				},
 				{
 					"match": "\\brune\\b",
-					"name": "storage.type.rune.go"
+					"name": "storage.type.rune.gop"
 				},
 				{
 					"match": "\\bstring\\b",
-					"name": "storage.type.string.go"
+					"name": "storage.type.string.gop"
 				},
 				{
 					"match": "\\buintptr\\b",
-					"name": "storage.type.uintptr.go"
+					"name": "storage.type.uintptr.gop"
 				},
 				{
 					"match": "\\bany\\b",
-					"name": "entity.name.type.any.go"
+					"name": "entity.name.type.any.gop"
 				}
 			]
 		},
@@ -623,16 +623,16 @@
 			"begin": "`",
 			"beginCaptures": {
 				"0": {
-					"name": "punctuation.definition.string.begin.go"
+					"name": "punctuation.definition.string.begin.gop"
 				}
 			},
 			"end": "`",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.definition.string.end.go"
+					"name": "punctuation.definition.string.end.gop"
 				}
 			},
-			"name": "string.quoted.raw.go",
+			"name": "string.quoted.raw.gop",
 			"patterns": [
 				{
 					"include": "#string_placeholder"
@@ -646,16 +646,16 @@
 					"begin": "\"",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.begin.go"
+							"name": "punctuation.definition.string.begin.gop"
 						}
 					},
 					"end": "\"",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.end.go"
+							"name": "punctuation.definition.string.end.gop"
 						}
 					},
-					"name": "string.quoted.double.go",
+					"name": "string.quoted.double.gop",
 					"patterns": [
 						{
 							"include": "#string_escaped_char"
@@ -671,11 +671,11 @@
 			"patterns": [
 				{
 					"match": "\\\\([0-7]{3}|[abfnrtv\\\\'\"]|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})",
-					"name": "constant.character.escape.go"
+					"name": "constant.character.escape.gop"
 				},
 				{
 					"match": "\\\\[^0-7xuUabfnrtv\\'\"]",
-					"name": "invalid.illegal.unknown-escape.go"
+					"name": "invalid.illegal.unknown-escape.gop"
 				}
 			]
 		},
@@ -683,7 +683,7 @@
 			"patterns": [
 				{
 					"match": "%(\\[\\d+\\])?([\\+#\\-0\\x20]{,2}((\\d+|\\*)?(\\.?(\\d+|\\*|(\\[\\d+\\])\\*?)?(\\[\\d+\\])?)?))?[vT%tbcdoqxXUbeEfFgGspw]",
-					"name": "constant.other.placeholder.go"
+					"name": "constant.other.placeholder.gop"
 				}
 			]
 		},
@@ -700,247 +700,247 @@
 									"match": "(?:(?:(?:(?:(?:\\G(?=[0-9.])(?!0[xXbBoO])([0-9](?:[0-9]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)((?:(?<=[0-9])\\.|\\.(?=[0-9])))([0-9](?:[0-9]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)?(?:(?<!_)([eE])(\\+?)(\\-?)((?:[0-9](?:[0-9]|(?:(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)))?(i(?!\\w))?(?:\\n|$)|\\G(?=[0-9.])(?!0[xXbBoO])([0-9](?:[0-9]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)(?<!_)([eE])(\\+?)(\\-?)((?:[0-9](?:[0-9]|(?:(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*))(i(?!\\w))?(?:\\n|$))|\\G((?:(?<=[0-9])\\.|\\.(?=[0-9])))([0-9](?:[0-9]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)(?:(?<!_)([eE])(\\+?)(\\-?)((?:[0-9](?:[0-9]|(?:(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)))?(i(?!\\w))?(?:\\n|$))|(\\G0[xX])_?([0-9a-fA-F](?:[0-9a-fA-F]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)((?:(?<=[0-9a-fA-F])\\.|\\.(?=[0-9a-fA-F])))([0-9a-fA-F](?:[0-9a-fA-F]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)?(?<!_)([pP])(\\+?)(\\-?)((?:[0-9](?:[0-9]|(?:(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*))(i(?!\\w))?(?:\\n|$))|(\\G0[xX])_?([0-9a-fA-F](?:[0-9a-fA-F]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)(?<!_)([pP])(\\+?)(\\-?)((?:[0-9](?:[0-9]|(?:(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*))(i(?!\\w))?(?:\\n|$))|(\\G0[xX])((?:(?<=[0-9a-fA-F])\\.|\\.(?=[0-9a-fA-F])))([0-9a-fA-F](?:[0-9a-fA-F]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)(?<!_)([pP])(\\+?)(\\-?)((?:[0-9](?:[0-9]|(?:(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*))(i(?!\\w))?(?:\\n|$))",
 									"captures": {
 										"1": {
-											"name": "constant.numeric.decimal.go",
+											"name": "constant.numeric.decimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"2": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"3": {
-											"name": "constant.numeric.decimal.point.go"
+											"name": "constant.numeric.decimal.point.gop"
 										},
 										"4": {
-											"name": "constant.numeric.decimal.go",
+											"name": "constant.numeric.decimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"5": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"6": {
-											"name": "keyword.other.unit.exponent.decimal.go"
+											"name": "keyword.other.unit.exponent.decimal.gop"
 										},
 										"7": {
-											"name": "keyword.operator.plus.exponent.decimal.go"
+											"name": "keyword.operator.plus.exponent.decimal.gop"
 										},
 										"8": {
-											"name": "keyword.operator.minus.exponent.decimal.go"
+											"name": "keyword.operator.minus.exponent.decimal.gop"
 										},
 										"9": {
-											"name": "constant.numeric.exponent.decimal.go",
+											"name": "constant.numeric.exponent.decimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"10": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										},
 										"11": {
-											"name": "constant.numeric.decimal.go",
+											"name": "constant.numeric.decimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"12": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"13": {
-											"name": "keyword.other.unit.exponent.decimal.go"
+											"name": "keyword.other.unit.exponent.decimal.gop"
 										},
 										"14": {
-											"name": "keyword.operator.plus.exponent.decimal.go"
+											"name": "keyword.operator.plus.exponent.decimal.gop"
 										},
 										"15": {
-											"name": "keyword.operator.minus.exponent.decimal.go"
+											"name": "keyword.operator.minus.exponent.decimal.gop"
 										},
 										"16": {
-											"name": "constant.numeric.exponent.decimal.go",
+											"name": "constant.numeric.exponent.decimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"17": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										},
 										"18": {
-											"name": "constant.numeric.decimal.point.go"
+											"name": "constant.numeric.decimal.point.gop"
 										},
 										"19": {
-											"name": "constant.numeric.decimal.go",
+											"name": "constant.numeric.decimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"20": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"21": {
-											"name": "keyword.other.unit.exponent.decimal.go"
+											"name": "keyword.other.unit.exponent.decimal.gop"
 										},
 										"22": {
-											"name": "keyword.operator.plus.exponent.decimal.go"
+											"name": "keyword.operator.plus.exponent.decimal.gop"
 										},
 										"23": {
-											"name": "keyword.operator.minus.exponent.decimal.go"
+											"name": "keyword.operator.minus.exponent.decimal.gop"
 										},
 										"24": {
-											"name": "constant.numeric.exponent.decimal.go",
+											"name": "constant.numeric.exponent.decimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"25": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										},
 										"26": {
-											"name": "keyword.other.unit.hexadecimal.go"
+											"name": "keyword.other.unit.hexadecimal.gop"
 										},
 										"27": {
-											"name": "constant.numeric.hexadecimal.go",
+											"name": "constant.numeric.hexadecimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"28": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"29": {
-											"name": "constant.numeric.hexadecimal.go"
+											"name": "constant.numeric.hexadecimal.gop"
 										},
 										"30": {
-											"name": "constant.numeric.hexadecimal.go",
+											"name": "constant.numeric.hexadecimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"31": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"32": {
-											"name": "keyword.other.unit.exponent.hexadecimal.go"
+											"name": "keyword.other.unit.exponent.hexadecimal.gop"
 										},
 										"33": {
-											"name": "keyword.operator.plus.exponent.hexadecimal.go"
+											"name": "keyword.operator.plus.exponent.hexadecimal.gop"
 										},
 										"34": {
-											"name": "keyword.operator.minus.exponent.hexadecimal.go"
+											"name": "keyword.operator.minus.exponent.hexadecimal.gop"
 										},
 										"35": {
-											"name": "constant.numeric.exponent.hexadecimal.go",
+											"name": "constant.numeric.exponent.hexadecimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"36": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										},
 										"37": {
-											"name": "keyword.other.unit.hexadecimal.go"
+											"name": "keyword.other.unit.hexadecimal.gop"
 										},
 										"38": {
-											"name": "constant.numeric.hexadecimal.go",
+											"name": "constant.numeric.hexadecimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"39": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"40": {
-											"name": "keyword.other.unit.exponent.hexadecimal.go"
+											"name": "keyword.other.unit.exponent.hexadecimal.gop"
 										},
 										"41": {
-											"name": "keyword.operator.plus.exponent.hexadecimal.go"
+											"name": "keyword.operator.plus.exponent.hexadecimal.gop"
 										},
 										"42": {
-											"name": "keyword.operator.minus.exponent.hexadecimal.go"
+											"name": "keyword.operator.minus.exponent.hexadecimal.gop"
 										},
 										"43": {
-											"name": "constant.numeric.exponent.hexadecimal.go",
+											"name": "constant.numeric.exponent.hexadecimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"44": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										},
 										"45": {
-											"name": "keyword.other.unit.hexadecimal.go"
+											"name": "keyword.other.unit.hexadecimal.gop"
 										},
 										"46": {
-											"name": "constant.numeric.hexadecimal.go"
+											"name": "constant.numeric.hexadecimal.gop"
 										},
 										"47": {
-											"name": "constant.numeric.hexadecimal.go",
+											"name": "constant.numeric.hexadecimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"48": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"49": {
-											"name": "keyword.other.unit.exponent.hexadecimal.go"
+											"name": "keyword.other.unit.exponent.hexadecimal.gop"
 										},
 										"50": {
-											"name": "keyword.operator.plus.exponent.hexadecimal.go"
+											"name": "keyword.operator.plus.exponent.hexadecimal.gop"
 										},
 										"51": {
-											"name": "keyword.operator.minus.exponent.hexadecimal.go"
+											"name": "keyword.operator.minus.exponent.hexadecimal.gop"
 										},
 										"52": {
-											"name": "constant.numeric.exponent.hexadecimal.go",
+											"name": "constant.numeric.exponent.hexadecimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"53": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										}
 									}
 								},
@@ -948,79 +948,79 @@
 									"match": "(?:(?:(?:\\G(?=[0-9.])(?!0[xXbBoO])([0-9](?:[0-9]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)(i(?!\\w))?(?:\\n|$)|(\\G0[bB])_?([01](?:[01]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)(i(?!\\w))?(?:\\n|$))|(\\G0[oO]?)_?((?:[0-7]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))+)(i(?!\\w))?(?:\\n|$))|(\\G0[xX])_?([0-9a-fA-F](?:[0-9a-fA-F]|((?<=[0-9a-fA-F])_(?=[0-9a-fA-F])))*)(i(?!\\w))?(?:\\n|$))",
 									"captures": {
 										"1": {
-											"name": "constant.numeric.decimal.go",
+											"name": "constant.numeric.decimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"2": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"3": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										},
 										"4": {
-											"name": "keyword.other.unit.binary.go"
+											"name": "keyword.other.unit.binary.gop"
 										},
 										"5": {
-											"name": "constant.numeric.binary.go",
+											"name": "constant.numeric.binary.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"6": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"7": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										},
 										"8": {
-											"name": "keyword.other.unit.octal.go"
+											"name": "keyword.other.unit.octal.gop"
 										},
 										"9": {
-											"name": "constant.numeric.octal.go",
+											"name": "constant.numeric.octal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"10": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"11": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										},
 										"12": {
-											"name": "keyword.other.unit.hexadecimal.go"
+											"name": "keyword.other.unit.hexadecimal.gop"
 										},
 										"13": {
-											"name": "constant.numeric.hexadecimal.go",
+											"name": "constant.numeric.hexadecimal.gop",
 											"patterns": [
 												{
 													"match": "(?<=[0-9a-fA-F])_(?=[0-9a-fA-F])",
-													"name": "punctuation.separator.constant.numeric.go"
+													"name": "punctuation.separator.constant.numeric.gop"
 												}
 											]
 										},
 										"14": {
-											"name": "punctuation.separator.constant.numeric.go"
+											"name": "punctuation.separator.constant.numeric.gop"
 										},
 										"15": {
-											"name": "keyword.other.unit.imaginary.go"
+											"name": "keyword.other.unit.imaginary.gop"
 										}
 									}
 								},
 								{
 									"match": "(?:(?:[0-9a-zA-Z_\\.])|(?<=[eEpP])[+-])+",
-									"name": "invalid.illegal.constant.numeric.go"
+									"name": "invalid.illegal.constant.numeric.gop"
 								}
 							]
 						}
@@ -1031,7 +1031,7 @@
 		"terminators": {
 			"comment": "Terminators",
 			"match": ";",
-			"name": "punctuation.terminator.go"
+			"name": "punctuation.terminator.gop"
 		},
 		"package_name": {
 			"patterns": [
@@ -1040,18 +1040,18 @@
 					"begin": "\\b(package)\\s+",
 					"beginCaptures": {
 						"1": {
-							"name": "keyword.package.go"
+							"name": "keyword.package.gop"
 						}
 					},
 					"end": "(?!\\G)",
 					"patterns": [
 						{
 							"match": "\\d\\w*",
-							"name": "invalid.illegal.identifier.go"
+							"name": "invalid.illegal.identifier.gop"
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.package.go"
+							"name": "entity.name.type.package.gop"
 						}
 					]
 				}
@@ -1065,7 +1065,7 @@
 					"begin": "\\b(import)\\s+",
 					"beginCaptures": {
 						"1": {
-							"name": "keyword.control.import.go"
+							"name": "keyword.control.import.gop"
 						}
 					},
 					"end": "(?!\\G)",
@@ -1090,21 +1090,21 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "variable.other.import.go"
+									"name": "variable.other.import.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "string.quoted.double.go"
+							"name": "string.quoted.double.gop"
 						},
 						"3": {
-							"name": "punctuation.definition.string.begin.go"
+							"name": "punctuation.definition.string.begin.gop"
 						},
 						"4": {
-							"name": "entity.name.import.go"
+							"name": "entity.name.import.gop"
 						},
 						"5": {
-							"name": "punctuation.definition.string.end.go"
+							"name": "punctuation.definition.string.end.gop"
 						}
 					}
 				},
@@ -1112,13 +1112,13 @@
 					"begin": "\\(",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.imports.begin.bracket.round.go"
+							"name": "punctuation.definition.imports.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.imports.end.bracket.round.go"
+							"name": "punctuation.definition.imports.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -1140,7 +1140,7 @@
 			"begin": "(?:^(\\bfunc\\b)(?:\\s*(\\([^\\)]+\\)\\s*)?(?:(\\w+)(?=\\(|\\[))?))",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.function.go"
+					"name": "keyword.function.gop"
 				},
 				"2": {
 					"patterns": [
@@ -1148,13 +1148,13 @@
 							"begin": "\\(",
 							"beginCaptures": {
 								"0": {
-									"name": "punctuation.definition.begin.bracket.round.go"
+									"name": "punctuation.definition.begin.bracket.round.gop"
 								}
 							},
 							"end": "\\)",
 							"endCaptures": {
 								"0": {
-									"name": "punctuation.definition.end.bracket.round.go"
+									"name": "punctuation.definition.end.bracket.round.gop"
 								}
 							},
 							"patterns": [
@@ -1162,7 +1162,7 @@
 									"match": "(?:(\\w+(?:\\s+))?((?:[\\w\\.\\*]+)(?:\\[(?:(?:(?:[\\w\\.\\*]+)(?:\\,\\s+)?)+)?\\])?))",
 									"captures": {
 										"1": {
-											"name": "variable.parameter.go"
+											"name": "variable.parameter.gop"
 										},
 										"2": {
 											"patterns": [
@@ -1174,7 +1174,7 @@
 												},
 												{
 													"match": "(?:\\w+)",
-													"name": "entity.name.type.go"
+													"name": "entity.name.type.gop"
 												}
 											]
 										}
@@ -1191,11 +1191,11 @@
 					"patterns": [
 						{
 							"match": "\\d\\w*",
-							"name": "invalid.illegal.identifier.go"
+							"name": "invalid.illegal.identifier.gop"
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.function.go"
+							"name": "entity.name.function.gop"
 						}
 					]
 				}
@@ -1212,7 +1212,7 @@
 						},
 						{
 							"match": "(?:\\w+)",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -1222,13 +1222,13 @@
 					"begin": "\\(",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -1247,18 +1247,18 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						}
 					},
 					"end": "\\]",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						}
 					},
 					"patterns": [
@@ -1281,7 +1281,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1315,7 +1315,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.parameter.go"
+									"name": "variable.parameter.gop"
 								}
 							]
 						}
@@ -1332,7 +1332,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.parameter.go"
+									"name": "variable.parameter.gop"
 								}
 							]
 						}
@@ -1349,7 +1349,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.parameter.go"
+									"name": "variable.parameter.gop"
 								}
 							]
 						},
@@ -1363,7 +1363,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1379,18 +1379,18 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						}
 					},
 					"end": "\\]",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						}
 					},
 					"patterns": [
@@ -1403,13 +1403,13 @@
 					"begin": "\\(",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -1429,7 +1429,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1463,7 +1463,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.parameter.go"
+									"name": "variable.parameter.gop"
 								}
 							]
 						}
@@ -1480,7 +1480,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.parameter.go"
+									"name": "variable.parameter.gop"
 								}
 							]
 						}
@@ -1497,7 +1497,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.parameter.go"
+									"name": "variable.parameter.gop"
 								}
 							]
 						},
@@ -1511,7 +1511,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
@@ -1522,7 +1522,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1538,18 +1538,18 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						}
 					},
 					"end": "\\]",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						}
 					},
 					"patterns": [
@@ -1562,13 +1562,13 @@
 					"begin": "\\(",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -1588,7 +1588,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1604,7 +1604,7 @@
 			"begin": "(?:(\\bfunc\\b)(?=\\())",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.function.go"
+					"name": "keyword.function.gop"
 				}
 			},
 			"end": "(?:(?<=\\))(\\s*(?:(?:[\\*\\[\\]]+)?(?:\\<\\-\\s*)?\\bchan\\b(?:\\s*\\<\\-)?\\s*)+)?((?:(?:\\s*(?:(?:[\\[\\]\\*]+)?[\\w\\.\\*]+)?(?:(?:\\[(?:(?:[\\w\\.\\*]+)?(?:\\[(?:[^\\]]+)?\\])?(?:\\,\\s+)?)+\\])|(?:\\((?:[^\\)]+)?\\)))?(?:[\\w\\.\\*]+)?)(?:\\s*)(?=\\{))|(?:\\s*(?:(?:(?:[\\[\\]\\*]+)?(?!\\bfunc\\b)(?:[\\w\\.\\*]+)(?:\\[(?:(?:[\\w\\.\\*]+)?(?:\\[(?:[^\\]]+)?\\])?(?:\\,\\s+)?)+\\])?(?:[\\w\\.\\*]+)?)|(?:\\((?:[^\\)]+)?\\)))))?)",
@@ -1626,7 +1626,7 @@
 						},
 						{
 							"match": "(?:\\w+)",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -1642,7 +1642,7 @@
 			"match": "(?:(\\bfunc\\b)((?:\\((?:[^/]*?)\\))(?:\\s+)(?:\\((?:[^/]*?)\\)))(?:\\s+)(?=\\{))",
 			"captures": {
 				"1": {
-					"name": "keyword.function.go"
+					"name": "keyword.function.gop"
 				},
 				"2": {
 					"patterns": [
@@ -1653,13 +1653,13 @@
 							"begin": "\\(",
 							"beginCaptures": {
 								"0": {
-									"name": "punctuation.definition.begin.bracket.round.go"
+									"name": "punctuation.definition.begin.bracket.round.gop"
 								}
 							},
 							"end": "\\)",
 							"endCaptures": {
 								"0": {
-									"name": "punctuation.definition.end.bracket.round.go"
+									"name": "punctuation.definition.end.bracket.round.gop"
 								}
 							},
 							"patterns": [
@@ -1673,23 +1673,23 @@
 						},
 						{
 							"match": "\\[",
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						},
 						{
 							"match": "\\]",
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						},
 						{
 							"match": "\\{",
-							"name": "punctuation.definition.begin.bracket.curly.go"
+							"name": "punctuation.definition.begin.bracket.curly.gop"
 						},
 						{
 							"match": "\\}",
-							"name": "punctuation.definition.end.bracket.curly.go"
+							"name": "punctuation.definition.end.bracket.curly.gop"
 						},
 						{
 							"match": "(?:\\w+)",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -1700,7 +1700,7 @@
 			"match": "(?:(?:((?<=\\.)\\b\\w+)|(\\b\\w+))(\\[(?:(?:[\\w\\.\\*\\[\\]\\{\\}\"\\']+)(?:(?:\\,\\s*(?:[\\w\\.\\*\\[\\]\\{\\}]+))*))?\\])?(?=\\())",
 			"captures": {
 				"1": {
-					"name": "entity.name.function.support.go"
+					"name": "entity.name.function.support.gop"
 				},
 				"2": {
 					"patterns": [
@@ -1709,11 +1709,11 @@
 						},
 						{
 							"match": "\\d\\w*",
-							"name": "invalid.illegal.identifier.go"
+							"name": "invalid.illegal.identifier.gop"
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.function.support.go"
+							"name": "entity.name.function.support.gop"
 						}
 					]
 				},
@@ -1724,23 +1724,23 @@
 						},
 						{
 							"match": "\\[",
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						},
 						{
 							"match": "\\]",
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						},
 						{
 							"match": "\\{",
-							"name": "punctuation.definition.begin.bracket.curly.go"
+							"name": "punctuation.definition.begin.bracket.curly.gop"
 						},
 						{
 							"match": "\\}",
-							"name": "punctuation.definition.end.bracket.curly.go"
+							"name": "punctuation.definition.end.bracket.curly.gop"
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -1763,7 +1763,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
@@ -1773,13 +1773,13 @@
 									"begin": "\\[",
 									"beginCaptures": {
 										"0": {
-											"name": "punctuation.definition.begin.bracket.square.go"
+											"name": "punctuation.definition.begin.bracket.square.gop"
 										}
 									},
 									"end": "\\]",
 									"endCaptures": {
 										"0": {
-											"name": "punctuation.definition.end.bracket.square.go"
+											"name": "punctuation.definition.end.bracket.square.gop"
 										}
 									},
 									"patterns": [
@@ -1788,7 +1788,7 @@
 										},
 										{
 											"match": "\\w+",
-											"name": "entity.name.type.go"
+											"name": "entity.name.type.gop"
 										},
 										{
 											"include": "$self"
@@ -1806,7 +1806,7 @@
 			"match": "(?:(?<=\\.\\()(?:(\\btype\\b)|((?:(?:\\s*(?:[\\*\\[\\]]+)?(?:\\<\\-\\s*)?\\bchan\\b(?:\\s*\\<\\-)?\\s*)+)?[\\w\\.\\[\\]\\*]+))(?=\\)))",
 			"captures": {
 				"1": {
-					"name": "keyword.type.go"
+					"name": "keyword.type.gop"
 				},
 				"2": {
 					"patterns": [
@@ -1815,7 +1815,7 @@
 						},
 						{
 							"match": "(?:\\w+)",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -1826,10 +1826,10 @@
 			"begin": "(\\bstruct\\b)\\s*(\\{)",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.struct.go"
+					"name": "keyword.struct.gop"
 				},
 				"2": {
-					"name": "punctuation.definition.begin.bracket.curly.go"
+					"name": "punctuation.definition.begin.bracket.curly.gop"
 				}
 			},
 			"patterns": [
@@ -1843,7 +1843,7 @@
 			"end": "\\}",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.definition.end.bracket.curly.go"
+					"name": "punctuation.definition.end.bracket.curly.gop"
 				}
 			}
 		},
@@ -1864,7 +1864,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1881,7 +1881,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "variable.other.property.go"
+									"name": "variable.other.property.gop"
 								}
 							]
 						},
@@ -1892,7 +1892,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1914,7 +1914,7 @@
 												},
 												{
 													"match": "(?:\\w+)",
-													"name": "variable.other.property.go"
+													"name": "variable.other.property.gop"
 												}
 											]
 										},
@@ -1925,7 +1925,7 @@
 												},
 												{
 													"match": "(?:\\w+)",
-													"name": "entity.name.type.go"
+													"name": "entity.name.type.gop"
 												}
 											]
 										}
@@ -1946,7 +1946,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1963,7 +1963,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "variable.other.property.go"
+									"name": "variable.other.property.gop"
 								}
 							]
 						},
@@ -1977,7 +1977,7 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -1999,21 +1999,21 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.other.property.go"
+									"name": "variable.other.property.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "keyword.struct.go"
+							"name": "keyword.struct.gop"
 						},
 						"3": {
-							"name": "punctuation.definition.begin.bracket.curly.go"
+							"name": "punctuation.definition.begin.bracket.curly.gop"
 						}
 					},
 					"end": "\\}",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.curly.go"
+							"name": "punctuation.definition.end.bracket.curly.gop"
 						}
 					},
 					"patterns": [
@@ -2036,21 +2036,21 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.other.property.go"
+									"name": "variable.other.property.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "keyword.interface.go"
+							"name": "keyword.interface.gop"
 						},
 						"3": {
-							"name": "punctuation.definition.begin.bracket.curly.go"
+							"name": "punctuation.definition.begin.bracket.curly.gop"
 						}
 					},
 					"end": "\\}",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.curly.go"
+							"name": "punctuation.definition.end.bracket.curly.gop"
 						}
 					},
 					"patterns": [
@@ -2073,21 +2073,21 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.other.property.go"
+									"name": "variable.other.property.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "keyword.function.go"
+							"name": "keyword.function.gop"
 						},
 						"3": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -2109,10 +2109,10 @@
 			"begin": "(\\binterface\\b)\\s*(\\{)",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.interface.go"
+					"name": "keyword.interface.gop"
 				},
 				"2": {
-					"name": "punctuation.definition.begin.bracket.curly.go"
+					"name": "punctuation.definition.begin.bracket.curly.gop"
 				}
 			},
 			"patterns": [
@@ -2126,7 +2126,7 @@
 			"end": "\\}",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.definition.end.bracket.curly.go"
+					"name": "punctuation.definition.end.bracket.curly.gop"
 				}
 			}
 		},
@@ -2149,18 +2149,18 @@
 								},
 								{
 									"match": "(?:\\w+)",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
 						"2": {
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						}
 					},
 					"end": "\\]",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						}
 					},
 					"patterns": [
@@ -2173,13 +2173,13 @@
 					"begin": "\\(",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -2199,7 +2199,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -2214,7 +2214,7 @@
 					"match": "(?:(?:^\\s*)(\\btype\\b)(?:\\s*)([\\w\\.\\*]+)(?:\\s+)(?!(?:\\=\\s*)?(?:[\\[\\]\\*]+)?\\b(?:struct|interface)\\b)([\\s\\S]+))",
 					"captures": {
 						"1": {
-							"name": "keyword.type.go"
+							"name": "keyword.type.gop"
 						},
 						"2": {
 							"patterns": [
@@ -2223,7 +2223,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
@@ -2233,13 +2233,13 @@
 									"begin": "\\(",
 									"beginCaptures": {
 										"0": {
-											"name": "punctuation.definition.begin.bracket.round.go"
+											"name": "punctuation.definition.begin.bracket.round.gop"
 										}
 									},
 									"end": "\\)",
 									"endCaptures": {
 										"0": {
-											"name": "punctuation.definition.end.bracket.round.go"
+											"name": "punctuation.definition.end.bracket.round.gop"
 										}
 									},
 									"patterns": [
@@ -2259,7 +2259,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -2270,7 +2270,7 @@
 					"begin": "(?:(?:^|\\s+)(\\btype\\b)(?:\\s*)([\\w\\.\\*]+)(?=\\[))",
 					"beginCaptures": {
 						"1": {
-							"name": "keyword.type.go"
+							"name": "keyword.type.gop"
 						},
 						"2": {
 							"patterns": [
@@ -2279,7 +2279,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -2293,15 +2293,15 @@
 								},
 								{
 									"match": "\\[",
-									"name": "punctuation.definition.begin.bracket.square.go"
+									"name": "punctuation.definition.begin.bracket.square.gop"
 								},
 								{
 									"match": "\\]",
-									"name": "punctuation.definition.end.bracket.square.go"
+									"name": "punctuation.definition.end.bracket.square.gop"
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -2318,31 +2318,31 @@
 						},
 						{
 							"match": "\\[",
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						},
 						{
 							"match": "\\]",
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						},
 						{
 							"match": "\\{",
-							"name": "punctuation.definition.begin.bracket.curly.go"
+							"name": "punctuation.definition.begin.bracket.curly.gop"
 						},
 						{
 							"match": "\\}",
-							"name": "punctuation.definition.end.bracket.curly.go"
+							"name": "punctuation.definition.end.bracket.curly.gop"
 						},
 						{
 							"match": "\\(",
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						},
 						{
 							"match": "\\)",
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -2353,10 +2353,10 @@
 			"begin": "(\\btype\\b)\\s*(\\()",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.type.go"
+					"name": "keyword.type.gop"
 				},
 				"2": {
-					"name": "punctuation.definition.begin.bracket.round.go"
+					"name": "punctuation.definition.begin.bracket.round.gop"
 				}
 			},
 			"patterns": [
@@ -2374,13 +2374,13 @@
 				},
 				{
 					"match": "(?:\\w+)",
-					"name": "entity.name.type.go"
+					"name": "entity.name.type.gop"
 				}
 			],
 			"end": "\\)",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.definition.end.bracket.round.go"
+					"name": "punctuation.definition.end.bracket.round.gop"
 				}
 			}
 		},
@@ -2395,15 +2395,15 @@
 						},
 						{
 							"match": "\\[",
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						},
 						{
 							"match": "\\]",
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						},
 						{
 							"match": "(?:\\w+)",
-							"name": "variable.other.go"
+							"name": "variable.other.gop"
 						}
 					]
 				}
@@ -2416,14 +2416,14 @@
 					"match": "\\[\\](\\s+)",
 					"captures": {
 						"1": {
-							"name": "invalid.illegal.slice.go"
+							"name": "invalid.illegal.slice.gop"
 						}
 					}
 				},
 				{
 					"comment": "Syntax error numeric literals",
 					"match": "\\b0[0-7]*[89]\\d*\\b",
-					"name": "invalid.illegal.numeric.go"
+					"name": "invalid.illegal.numeric.gop"
 				}
 			]
 		},
@@ -2432,23 +2432,23 @@
 			"patterns": [
 				{
 					"match": "\\b(append|cap|close|complex|copy|delete|imag|len|panic|print|println|real|recover|min|max|clear)\\b(?=\\()",
-					"name": "entity.name.function.support.builtin.go"
+					"name": "entity.name.function.support.builtin.gop"
 				},
 				{
 					"comment": "new keyword",
 					"begin": "(?:(\\bnew\\b)(\\())",
 					"beginCaptures": {
 						"1": {
-							"name": "entity.name.function.support.builtin.go"
+							"name": "entity.name.function.support.builtin.gop"
 						},
 						"2": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -2466,7 +2466,7 @@
 						},
 						{
 							"match": "(?:\\w+)",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						},
 						{
 							"include": "$self"
@@ -2478,10 +2478,10 @@
 					"begin": "(?:(\\bmake\\b)(?:(\\()((?:(?:(?:[\\*\\[\\]]+)?(?:\\<\\-\\s*)?\\bchan\\b(?:\\s*\\<\\-)?\\s*)+(?:\\([^\\)]+\\))?)?(?:[\\[\\]\\*]+)?(?:(?!\\bmap\\b)(?:[\\w\\.]+))?(\\[(?:(?:[\\S]+)(?:(?:\\,\\s*(?:[\\S]+))*))?\\])?(?:\\,)?)?))",
 					"beginCaptures": {
 						"1": {
-							"name": "entity.name.function.support.builtin.go"
+							"name": "entity.name.function.support.builtin.gop"
 						},
 						"2": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						},
 						"3": {
 							"patterns": [
@@ -2493,7 +2493,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -2501,7 +2501,7 @@
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -2517,7 +2517,7 @@
 			"match": "(?:(?:^\\s*)(\\btype\\b)(?:\\s*)([\\w\\.]+))",
 			"captures": {
 				"1": {
-					"name": "keyword.type.go"
+					"name": "keyword.type.gop"
 				},
 				"2": {
 					"patterns": [
@@ -2526,7 +2526,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -2543,7 +2543,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "variable.other.assignment.go"
+							"name": "variable.other.assignment.gop"
 						}
 					]
 				},
@@ -2557,7 +2557,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "variable.other.go"
+							"name": "variable.other.gop"
 						}
 					]
 				},
@@ -2571,18 +2571,18 @@
 						},
 						{
 							"match": "\\btype\\b",
-							"name": "keyword.type.go"
+							"name": "keyword.type.gop"
 						}
 					]
 				},
 				"4": {
-					"name": "punctuation.definition.begin.bracket.curly.go"
+					"name": "punctuation.definition.begin.bracket.curly.gop"
 				}
 			},
 			"end": "(?:\\})",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.definition.end.bracket.curly.go"
+					"name": "punctuation.definition.end.bracket.curly.gop"
 				}
 			},
 			"patterns": [
@@ -2591,7 +2591,7 @@
 					"match": "(?:^\\s*(\\bcase\\b))(?:\\s+)([\\w\\.\\,\\*\\=\\<\\>\\!\\s]+)(:)(\\s*/(?:/|\\*)\\s*.*)?$",
 					"captures": {
 						"1": {
-							"name": "keyword.control.go"
+							"name": "keyword.control.gop"
 						},
 						"2": {
 							"patterns": [
@@ -2600,12 +2600,12 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						},
 						"3": {
-							"name": "punctuation.other.colon.go"
+							"name": "punctuation.other.colon.gop"
 						},
 						"4": {
 							"patterns": [
@@ -2621,13 +2621,13 @@
 					"begin": "\\bcase\\b",
 					"beginCaptures": {
 						"0": {
-							"name": "keyword.control.go"
+							"name": "keyword.control.gop"
 						}
 					},
 					"end": "\\:",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.other.colon.go"
+							"name": "punctuation.other.colon.gop"
 						}
 					},
 					"patterns": [
@@ -2636,7 +2636,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				},
@@ -2659,7 +2659,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.other.assignment.go"
+									"name": "variable.other.assignment.gop"
 								}
 							]
 						},
@@ -2673,23 +2673,23 @@
 								},
 								{
 									"match": "\\(",
-									"name": "punctuation.definition.begin.bracket.round.go"
+									"name": "punctuation.definition.begin.bracket.round.gop"
 								},
 								{
 									"match": "\\)",
-									"name": "punctuation.definition.end.bracket.round.go"
+									"name": "punctuation.definition.end.bracket.round.gop"
 								},
 								{
 									"match": "\\[",
-									"name": "punctuation.definition.begin.bracket.square.go"
+									"name": "punctuation.definition.begin.bracket.square.gop"
 								},
 								{
 									"match": "\\]",
-									"name": "punctuation.definition.end.bracket.square.go"
+									"name": "punctuation.definition.end.bracket.square.gop"
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -2700,13 +2700,13 @@
 					"begin": "(?:(?<=\\bvar\\b)(?:\\s*)(\\())",
 					"beginCaptures": {
 						"1": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -2720,7 +2720,7 @@
 										},
 										{
 											"match": "\\w+",
-											"name": "variable.other.assignment.go"
+											"name": "variable.other.assignment.gop"
 										}
 									]
 								},
@@ -2734,23 +2734,23 @@
 										},
 										{
 											"match": "\\(",
-											"name": "punctuation.definition.begin.bracket.round.go"
+											"name": "punctuation.definition.begin.bracket.round.gop"
 										},
 										{
 											"match": "\\)",
-											"name": "punctuation.definition.end.bracket.round.go"
+											"name": "punctuation.definition.end.bracket.round.gop"
 										},
 										{
 											"match": "\\[",
-											"name": "punctuation.definition.begin.bracket.square.go"
+											"name": "punctuation.definition.begin.bracket.square.gop"
 										},
 										{
 											"match": "\\]",
-											"name": "punctuation.definition.end.bracket.square.go"
+											"name": "punctuation.definition.end.bracket.square.gop"
 										},
 										{
 											"match": "\\w+",
-											"name": "entity.name.type.go"
+											"name": "entity.name.type.gop"
 										}
 									]
 								}
@@ -2777,7 +2777,7 @@
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.other.constant.go"
+									"name": "variable.other.constant.gop"
 								}
 							]
 						},
@@ -2791,23 +2791,23 @@
 								},
 								{
 									"match": "\\(",
-									"name": "punctuation.definition.begin.bracket.round.go"
+									"name": "punctuation.definition.begin.bracket.round.gop"
 								},
 								{
 									"match": "\\)",
-									"name": "punctuation.definition.end.bracket.round.go"
+									"name": "punctuation.definition.end.bracket.round.gop"
 								},
 								{
 									"match": "\\[",
-									"name": "punctuation.definition.begin.bracket.square.go"
+									"name": "punctuation.definition.begin.bracket.square.gop"
 								},
 								{
 									"match": "\\]",
-									"name": "punctuation.definition.end.bracket.square.go"
+									"name": "punctuation.definition.end.bracket.square.gop"
 								},
 								{
 									"match": "\\w+",
-									"name": "entity.name.type.go"
+									"name": "entity.name.type.gop"
 								}
 							]
 						}
@@ -2818,13 +2818,13 @@
 					"begin": "(?:(?<=\\bconst\\b)(?:\\s*)(\\())",
 					"beginCaptures": {
 						"1": {
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						}
 					},
 					"end": "\\)",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						}
 					},
 					"patterns": [
@@ -2838,7 +2838,7 @@
 										},
 										{
 											"match": "\\w+",
-											"name": "variable.other.constant.go"
+											"name": "variable.other.constant.gop"
 										}
 									]
 								},
@@ -2852,23 +2852,23 @@
 										},
 										{
 											"match": "\\(",
-											"name": "punctuation.definition.begin.bracket.round.go"
+											"name": "punctuation.definition.begin.bracket.round.gop"
 										},
 										{
 											"match": "\\)",
-											"name": "punctuation.definition.end.bracket.round.go"
+											"name": "punctuation.definition.end.bracket.round.gop"
 										},
 										{
 											"match": "\\[",
-											"name": "punctuation.definition.begin.bracket.square.go"
+											"name": "punctuation.definition.begin.bracket.square.gop"
 										},
 										{
 											"match": "\\]",
-											"name": "punctuation.definition.end.bracket.square.go"
+											"name": "punctuation.definition.end.bracket.square.gop"
 										},
 										{
 											"match": "\\w+",
-											"name": "entity.name.type.go"
+											"name": "entity.name.type.gop"
 										}
 									]
 								}
@@ -2895,11 +2895,11 @@
 								},
 								{
 									"match": "\\d\\w*",
-									"name": "invalid.illegal.identifier.go"
+									"name": "invalid.illegal.identifier.gop"
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.other.assignment.go"
+									"name": "variable.other.assignment.gop"
 								}
 							]
 						}
@@ -2919,11 +2919,11 @@
 								},
 								{
 									"match": "\\d\\w*",
-									"name": "invalid.illegal.identifier.go"
+									"name": "invalid.illegal.identifier.gop"
 								},
 								{
 									"match": "\\w+",
-									"name": "variable.other.assignment.go"
+									"name": "variable.other.assignment.gop"
 								}
 							]
 						}
@@ -2942,7 +2942,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				},
@@ -2960,7 +2960,7 @@
 			"match": "(?:(?:^\\s*(\\bcase\\b))(?:\\s+)([\\s\\S]+(?:\\:)\\s*(?:/(?:/|\\*).*)?)$)",
 			"captures": {
 				"1": {
-					"name": "keyword.control.go"
+					"name": "keyword.control.gop"
 				},
 				"2": {
 					"patterns": [
@@ -2975,7 +2975,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "variable.other.go"
+							"name": "variable.other.gop"
 						}
 					]
 				}
@@ -2992,7 +2992,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "variable.other.go"
+							"name": "variable.other.gop"
 						}
 					]
 				}
@@ -3009,7 +3009,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "variable.other.property.go"
+							"name": "variable.other.property.gop"
 						}
 					]
 				}
@@ -3026,7 +3026,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "variable.other.label.go"
+							"name": "variable.other.label.gop"
 						}
 					]
 				}
@@ -3043,23 +3043,23 @@
 						},
 						{
 							"match": "\\(",
-							"name": "punctuation.definition.begin.bracket.round.go"
+							"name": "punctuation.definition.begin.bracket.round.gop"
 						},
 						{
 							"match": "\\)",
-							"name": "punctuation.definition.end.bracket.round.go"
+							"name": "punctuation.definition.end.bracket.round.gop"
 						},
 						{
 							"match": "\\[",
-							"name": "punctuation.definition.begin.bracket.square.go"
+							"name": "punctuation.definition.begin.bracket.square.gop"
 						},
 						{
 							"match": "\\]",
-							"name": "punctuation.definition.end.bracket.square.go"
+							"name": "punctuation.definition.end.bracket.square.gop"
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -3076,7 +3076,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "variable.other.property.go"
+							"name": "variable.other.property.gop"
 						}
 					]
 				},
@@ -3084,7 +3084,7 @@
 					"patterns": [
 						{
 							"match": "\\binvalid\\b\\s+\\btype\\b",
-							"name": "invalid.field.go"
+							"name": "invalid.field.gop"
 						},
 						{
 							"include": "#type-declarations-without-brackets"
@@ -3094,7 +3094,7 @@
 						},
 						{
 							"match": "\\w+",
-							"name": "entity.name.type.go"
+							"name": "entity.name.type.gop"
 						}
 					]
 				}
@@ -3103,7 +3103,7 @@
 		"other_variables": {
 			"comment": "all other variables",
 			"match": "\\w+",
-			"name": "variable.other.go"
+			"name": "variable.other.gop"
 		}
 	}
 }
