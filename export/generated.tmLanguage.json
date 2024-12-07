@@ -52,6 +52,9 @@
 				},
 				{
 					"include": "#support_functions"
+				},
+				{
+					"include": "#support_commands"
 				}
 			]
 		},
@@ -518,6 +521,10 @@
 				{
 					"match": "<\\-",
 					"name": "keyword.operator.channel.gop"
+				},
+				{
+					"match": "=>",
+					"name": "keyword.operator.lambda.gop"
 				},
 				{
 					"match": "\\-\\-",
@@ -1746,6 +1753,30 @@
 				}
 			}
 		},
+		"support_commands": {
+			"captures": {
+				"1": {
+					"name": "entity.name.function.support.command.gop"
+				},
+				"2": {
+					"patterns": [
+						{
+							"include": "#type-declarations"
+						},
+						{
+							"match": "\\d\\w*",
+							"name": "invalid.illegal.identifier.gop"
+						},
+						{
+							"match": "\\w+",
+							"name": "entity.name.function.support.command.gop"
+						}
+					]
+				}
+			},
+			"comment": "Support Commands",
+			"match": "(?:(?:((?<=\\.)\\b\\w+)|(^\\s*\\w+))(?=(\\s+(\\w|\"|\\(|=>|\\{|\\-|//|\\[)|$)))"
+		},
 		"other_struct_interface_expressions": {
 			"comment": "struct and interface expression in-line (before curly bracket)",
 			"patterns": [
@@ -2433,6 +2464,10 @@
 				{
 					"match": "\\b(append|cap|close|complex|copy|delete|imag|len|panic|print|println|real|recover|min|max|clear)\\b(?=\\()",
 					"name": "entity.name.function.support.builtin.gop"
+				},
+				{
+					"match": "^\\s*(append|cap|close|complex|copy|delete|imag|len|panic|print|println|real|recover|min|max|clear)(?=(\\s+(\\w|\"|\\(|=>|\\{|\\-|//|\\[)|$))",
+					"name": "entity.name.function.support.builtin.command.gop"
 				},
 				{
 					"comment": "new keyword",
